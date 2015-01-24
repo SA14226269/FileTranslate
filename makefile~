@@ -1,0 +1,7 @@
+all:	server client
+
+server:
+	gcc server.c transmit.c conn.c strtool.c dbtime.c -lrt -lpthread -o server
+  
+client:
+	gcc client.c transmit.c conn.c strtool.c dbtime.c -lrt -lpthread -o client
